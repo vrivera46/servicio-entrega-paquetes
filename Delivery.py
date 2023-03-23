@@ -12,16 +12,28 @@ class Delivery (object):
                  receiver: Person = Person, sender_add: Address = Address, receiver_add: Address = Address,
                  contact: Person = Person, items: Package = Package, bill: Bill = Bill):
         """ Constructor of the Delivery object
-        :param id_delivery: id of
-        :param date:
-        :param time:
-        :param sender:
-        :param receiver:
-        :param sender_add:
-        :param receiver_add:
-        :param contact:
-        :param items:
-        :param bill:
+        :param id_delivery: id of delivery
+        :type  int
+        :param date: date of delivery
+        :type  str
+        :param time: time of delivery
+        :type  str
+        :param sender: sender of delivery
+        :type: Person
+        :param receiver: receiver of delivery
+        :type  Person
+        :param sender_add: sender address of delivery
+        :type  Address
+        :param receiver_add: receiver address of delivery
+        :type  Address
+        :param contact: contact of delivery
+        :type  Person
+        :param items: items of delivery
+        :type  Package
+        :param bill: bill of delivery
+        :type  Bill
+        :return delivery object
+        :type   Deliver
         """
         self._id_delivery = id_delivery
         self._date = date
